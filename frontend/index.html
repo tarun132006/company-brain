@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Company Brain</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                C
+            </div>
+
+            <div class="brand-text">
+
+                <div class="brand-name">
+                    Company Brain
+                </div>
+
+                <div class="brand-subtitle">
+                    Organizational AI
+                </div>
+
+            </div>
+
+            <button class="sidebar-close" id="sidebarClose">
+                ×
+            </button>
+
+        </div>
+
+
+        <button class="new-chat" id="newChat">
+
+            <span>＋</span>
+
+            <span>New conversation</span>
+
+        </button>
+
+
+        <!-- ================= AGENTS ================= -->
+
+        <div class="sidebar-section">
+
+            <div class="section-label">
+                AGENTS
+            </div>
+
+
+            <button class="agent active">
+
+                <span class="agent-dot support"></span>
+
+                <span>
+                    Support Agent
+                </span>
+
+            </button>
+
+
+            <button class="agent">
+
+                <span class="agent-dot engineering"></span>
+
+                <span>
+                    Engineering
+                </span>
+
+            </button>
+
+
+            <button class="agent">
+
+                <span class="agent-dot sales"></span>
+
+                <span>
+                    Sales
+                </span>
+
+            </button>
+
+            <button class="agent">
+              <span class="agent-dot arbiter"></span>
+              <span>Arbiter</span>
+            </button>
+
+        </div>
+
+
+        <!-- ================= MEMORY ================= -->
+
+        <div class="sidebar-section">
+
+            <div class="section-label">
+                MEMORY
+            </div>
+
+
+            <div class="memory-nav">
+
+                <div class="memory-symbol">
+                    ✦
+                </div>
+
+                <div>
+
+                    <div class="memory-title">
+                        Hindsight
+                    </div>
+
+                    <div class="memory-description">
+                        Long-term organizational memory
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= SYSTEM ================= -->
+
+        <div class="sidebar-bottom">
+
+            <div class="system-status">
+
+                <span class="online-dot"></span>
+
+                <div>
+
+                    <div class="system-title">
+                        Company Brain
+                    </div>
+
+                    <div class="system-description">
+                        Hindsight + Groq
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+
+        <!-- ================= TOP BAR ================= -->
+
+        <header class="topbar">
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+
+            <div class="mobile-title">
+                Company Brain
+            </div>
+
+
+            <div class="connection-status">
+
+                <span class="connection-dot"></span>
+
+                <span>
+                    Online
+                </span>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= CHAT ================= -->
+
+        <section class="chat-area" id="chatArea">
+
+
+            <!-- ================= WELCOME ================= -->
+
+            <div class="welcome" id="welcome">
+
+                <div class="welcome-icon">
+                    C
+                </div>
+
+
+                <h1>
+                    Company Brain
+                </h1>
+
+
+                <p>
+                    Ask your company's AI memory anything.
+                </p>
+
+
+                <div class="technology">
+
+                    <span>
+                        Hindsight Memory
+                    </span>
+
+                    <span class="separator">
+                        +
+                    </span>
+
+                    <span>
+                        Groq Reasoning
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= MESSAGES ================= -->
+
+            <div class="messages" id="messages">
+            </div>
+
+        </section>
+
+
+        <!-- ================= INPUT AREA ================= -->
+
+        <div class="input-wrapper">
+
+            <div class="composer">
+
+                <textarea
+                    id="message"
+                    rows="1"
+                    placeholder="Message Company Brain..."
+                ></textarea>
+
+
+                <button
+                    class="send-button"
+                    id="sendButton"
+                    title="Send message"
+                >
+                    ↑
+                </button>
+
+            </div>
+
+
+            <div class="input-hint">
+
+                Company Brain can recall previous organizational experiences.
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= MOBILE OVERLAY ================= -->
+
+        <div
+            class="sidebar-overlay"
+            id="sidebarOverlay">
+        </div>
+
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
